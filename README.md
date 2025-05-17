@@ -72,6 +72,50 @@ pip install -r requirements.txt
 
 ### ▶️ Running the App
 You can run the Flask app using:
-```python run.py
+```bash
+python run.py
 ```
+
 The API will start at: http://127.0.0.1:5000/
+
+### 📡 API Endpoints
+1. Add a flashcard
+```
+POST /flashcard
+Content-Type: application/json
+
+{
+  "student_id": "stu001",
+  "question": "What is Newton's Second Law?",
+  "answer": "Force equals mass times acceleration"
+}
+
+Response:
+
+{
+  "message": "Flashcard added successfully",
+  "subject": "Physics"
+}
+```
+2. Get Flashcards by student (by Mixed Subjects)
+```
+GET /get-subject?student_id=stu001&limit=5
+```
+Response:
+Returns a mix of flashcards across subjects for that student.
+[
+  {
+    "question": "What is Newton's Second Law?",
+    "answer": "Force equals mass times acceleration",
+    "subject": "Physics"
+  },
+  {
+    "question": "What is photosynthesis?",
+    "answer": "A process used by plants to convert light into energy",
+    "subject": "Biology"
+  }
+]
+
+This project was developed as part of the NNIIT Tech Hyderabad assignment.
+
+
