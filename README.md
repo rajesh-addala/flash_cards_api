@@ -22,15 +22,7 @@ The system allows students to:
 ---
 
 ## 📁 Folder Structure
-flashcard-app/
-├── app/
-│ ├── init.py
-│ ├── app.py # Main Flask app with routes
-│ ├── models.py # Flashcard model (SQLAlchemy)
-│ ├── database.py # Database setup (SQLite)
-│ ├── classifier.py # Rule-based subject classifier
-├── requirements.txt # Dependencies
-└── README.md # Full documentation
+<pre> flashcard-app/ ├── app/ │ ├── __init__.py │ ├── app.py # Main Flask app with routes │ ├── models.py # Flashcard model (SQLAlchemy) │ ├── database.py # Database setup (SQLite) │ ├── classifier.py # Rule-based subject classifier │ └── model.pkl # Trained model (if used) ├── requirements.txt # Dependencies ├── run.py # Entry point to run the app ├── train_model.py # Script to train subject classification model ├── train_classifier.py # Rule-based classifier (alternative approach) ├── training_data.csv # Dataset for training classifier ├── README.md # Full documentation └── .gitignore # Git ignored files and folders </pre>
 
 
 ---
@@ -103,7 +95,7 @@ GET /get-subject?student_id=stu001&limit=5
 ```
 Response:
 Returns a mix of flashcards across subjects for that student.
-[
+```[
   {
     "question": "What is Newton's Second Law?",
     "answer": "Force equals mass times acceleration",
@@ -115,7 +107,7 @@ Returns a mix of flashcards across subjects for that student.
     "subject": "Biology"
   }
 ]
-
+```
 This project was developed as part of the NNIIT Tech Hyderabad assignment.
 
 
