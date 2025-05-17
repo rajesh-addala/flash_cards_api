@@ -52,6 +52,26 @@ flashcard-app/
 Make sure Python 3 is installed. Then:
 
 ### 🔌 Step 1: Clone the repo
-```bash
+```
 git clone https://github.com/rajesh-addala/flash_card_api.git
 cd flashcard-app
+```
+### 🧪 Step 2: Create a virtual environment and activate it
+```
+python -m venv .venv
+# On Windows
+.venv\Scripts\activate
+# On macOS/Linux
+source .venv/bin/activate
+```
+
+### 📥 Step 3: Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### ▶️ Running the App
+You can run the Flask app using:
+```python run.py
+```
+The API will start at: http://127.0.0.1:5000/
