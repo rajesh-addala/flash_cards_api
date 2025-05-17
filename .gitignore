@@ -1,0 +1,55 @@
+# Ignore Python bytecode and caches
+.mypy_cache/
+__pypackages__/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environment
+.venv/
+env/
+ENV/
+venv/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and local database/cache
+*.log
+*.sqlite3
+*.db
+
+# Ignore environment/config files
+.env
+*.env
+
+# Ignore compiled model files
+*.pkl
+
+# Ignore PyInstaller spec and dist
+*.spec
+dist/
+build/
+
+# Ignore egg and packaging files
+*.egg-info/
+.eggs/
+
+# Ignore coverage and testing
+.coverage
+.tox/
+.cache/
+nosetests.xml
+coverage.xml
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# If using Mac/Linux hidden files
+*.swp
+*.swo
